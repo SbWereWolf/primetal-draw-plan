@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outline>
+	<body>
+		<contour startX="0" startY="0" >
+			<vector X="250" Y="0" />
+			<vector X="0" Y="50" />
+			<vector X="-50" Y="0" />
+			<vector X="0" Y="50" />
+			<vector X="50" Y="0" />
+			<vector X="0" Y="250" />
+			<vector X="-250" Y="0" />
+			<vector X="0" Y="-200" />
+			<vector X="50" Y="0" />
+			<vector X="0" Y="-50" />
+			<vector X="50" Y="0" />
+			<vector X="0" Y="50" />
+			<vector X="50" Y="0" />
+			<vector X="0" Y="-100" />
+			<vector X="-150" Y="0" />
+			<vector X="0" Y="-50" />
+		</contour>
+	</body>
+	<aperture>
+		<contour startX="50" startY="200" >
+			<vector X="50" Y="0" />
+			<vector X="0" Y="50" />
+			<vector X="50" Y="0" />
+			<vector X="0" Y="-50" />
+			<vector X="50" Y="0" />
+			<vector X="0" Y="100" />
+			<vector X="-150" Y="0" />
+			<vector X="0" Y="-100" />
+		</contour>
+	</aperture>
+</outline>
