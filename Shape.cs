@@ -2,11 +2,11 @@
 {
     class Shape
     {
-        public Shape(Contour contur)
+        public Shape(Contour contour)
         {
-            Contur = contur;
+            Contour = contour;
         }
 
-        public Contour Contur { get; }
+        public Contour Contour { get; }
     }
 }

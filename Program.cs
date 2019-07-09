@@ -49,7 +49,7 @@ namespace draw_plan
                     var outlines = new List<Outline>();
                     if (tryExecute && file != null)
                     {
-                        outlines = GetDesings(file);
+                        outlines = GetDesigns(file);
                     }
 
                     if (outlines != null && outlines.Count > 0)
@@ -74,14 +74,14 @@ namespace draw_plan
 
                         var body = outline.Body;
                         var pen = new Pen(Color.Blue);
-                        body?.Contur?.Draw(canvas, pen, outline.Margin);
+                        body?.Contour?.Draw(canvas, pen, outline.Margin);
 
                         pen = new Pen(Color.Red);
                         // ReSharper disable PossibleNullReferenceException
                         foreach (var aperture in outline.Next())
                         // ReSharper restore PossibleNullReferenceException
                         {
-                            aperture?.Contur?.Draw(canvas, pen, outline.Margin);
+                            aperture?.Contour?.Draw(canvas, pen, outline.Margin);
                         }
 
                         bitmap.Save($"{outline.Name}.png", ImageFormat.Png);
@@ -90,7 +90,7 @@ namespace draw_plan
         }
 
 
-        private static List<Outline> GetDesings(string file)
+        private static List<Outline> GetDesigns(string file)
         {
             var designs = new List<Outline>();
             using (var reader = XmlReader.Create(file ?? throw new ArgumentNullException(nameof(file))))

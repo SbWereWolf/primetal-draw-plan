@@ -36,15 +36,15 @@ namespace draw_plan
             var body = Body;
             var dimensionX = 0;
             var dimensionY = 0;
-            if (body?.Contur != null)
+            if (body?.Contour != null)
             {
-                var pointX = body.Contur.StartX;
-                var pointY = body.Contur.StartY;
+                var pointX = body.Contour.StartX;
+                var pointY = body.Contour.StartY;
                 var width = new MinMax(pointX);
                 var length = new MinMax(pointY);
 
                 // ReSharper disable PossibleNullReferenceException
-                foreach (var vector in body.Contur.Next())
+                foreach (var vector in body.Contour.Next())
                 // ReSharper restore PossibleNullReferenceException
                 {
                     if (vector != null)
